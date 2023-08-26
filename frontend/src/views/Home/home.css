@@ -1,0 +1,107 @@
+
+html {background-color: yellowgreen ;
+}
+.home-container {
+  width: 100%;
+  display: flex;
+  min-height: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: yellowgreen ;
+  position:absolute;
+}
+.home-containermenu {
+  flex: initial;
+  width: 100%;
+  height: 60px;
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-start;
+}
+.button {
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  background-color: yellowgreen;
+  margin-right: 75px;
+}
+.player1 {
+  flex:initial;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.count {
+  font-weight: bold;
+}
+.player2 {
+  flex:initial;
+  justify-content: center;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.number {
+  flex:initial;
+  display: flex;
+  width: 30%;
+  height: 15%;
+}
+.bigPit {
+  flex:initial;
+  display: flex;
+  width: 100%;
+  height: 15%;
+}
+.alert-message {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 40%;
+  align-items: center;
+}
+.home-container-big {
+  flex: initial;
+  width: 13%;
+  border: 2px solid black;
+  height: 166px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background:yellowgreen;
+}
+.home-container-small {
+  flex: initial;
+  width: 13%;
+  border: 2px solid black;
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background:lightcoral;
+}
+
+.home-container-firstrow {
+  width: 80%;
+  margin-left:10% ;
+  margin-top: 5%;
+  flex: initial;
+  height: 60px;
+  display: flex;
+  align-items: flex-center;
+}
+.home-container-secondrow {
+  width: 75.5%;
+  margin-left:20%;
+  margin-top: 3%;
+  flex: initial;
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+

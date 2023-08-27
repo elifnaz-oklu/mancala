@@ -123,64 +123,66 @@ const Home = (props) => {
         <Button className="button" onClick={createGame}><p>Create Game</p></Button>
         <span id="message" className="alert-message"></span>
       </div>
-      <div className="home-container-firstrow">
-        <div className="home-container-big">
-          <span className='bigPit'>{p2Name} Big Pit</span>
-          <div className="player2"><p className='count'>{p2BigPit}</p></div>
+      <div className='pit-container'>
+        <div className="home-container-firstrow">
+          <div className="home-container-big-1">
+            <span className='bigPit'>{p2Name} Big Pit</span>
+            <div className="player2"><p className='count-big'>{p2BigPit}</p></div>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>6</span>
+            <Button className="player2"  disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,12)} ><p className='count'>{p2p6}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>5</span>
+            <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,11)}><p className='count'>{p2p5}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>4</span>
+            <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,10)}><p className='count'>{p2p4}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>3</span>
+            <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,9)}><p className='count'>{p2p3}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>2</span>
+            <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,8)}><p className='count'>{p2p2}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>1</span>
+            <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false}  onClick={() => play(p2Name,7)}><p className='count'>{p2p1}</p></Button>
+          </div>
         </div>
-        <div className="home-container-small">
-          <span className='number'>6</span>
-          <Button className="player2"  disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,12)} ><p className='count'>{p2p6}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>5</span>
-          <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,11)}><p className='count'>{p2p5}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>4</span>
-          <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,10)}><p className='count'>{p2p4}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>3</span>
-          <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,9)}><p className='count'>{p2p3}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>2</span>
-          <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false} onClick={() => play(p2Name,8)}><p className='count'>{p2p2}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>1</span>
-          <Button className="player2" disabled={(isFinished || isPlayer1) ? true : false}  onClick={() => play(p2Name,7)}><p className='count'>{p2p1}</p></Button>
-        </div>
-        <div className="home-container-big">
-          <span className='bigPit'>{p1Name} Big Pit</span>
-          <div className="player1"><p className='count'>{p1BigPit}</p></div>
-        </div>
-      </div>
-      <div className="home-container-secondrow">
-        <div className="home-container-small">
-          <span className='number'>1</span>
-          <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false}  onClick={() => play(p1Name,0)}><p className='count'>{p1p1}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>2</span>
-          <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false}  onClick={() => play(p1Name,1)}><p className='count'>{p1p2}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>3</span>
-          <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,2)}><p className='count'>{p1p3}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>4</span>
-          <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,3)}><p className='count'>{p1p4}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>5</span>
-          <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,4)}><p className='count'>{p1p5}</p></Button>
-        </div>
-        <div className="home-container-small">
-          <span className='number'>6</span>
-          <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,5)}><p className='count'>{p1p6}</p></Button>
+        <div className="home-container-secondrow">
+          <div className="home-container-small">
+            <span className='number'>1</span>
+            <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false}  onClick={() => play(p1Name,0)}><p className='count'>{p1p1}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>2</span>
+            <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false}  onClick={() => play(p1Name,1)}><p className='count'>{p1p2}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>3</span>
+            <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,2)}><p className='count'>{p1p3}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>4</span>
+            <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,3)}><p className='count'>{p1p4}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>5</span>
+            <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,4)}><p className='count'>{p1p5}</p></Button>
+          </div>
+          <div className="home-container-small">
+            <span className='number'>6</span>
+            <Button className="player1" disabled={(isFinished || !isPlayer1) ? true : false} onClick={() => play(p1Name,5)}><p className='count'>{p1p6}</p></Button>
+          </div>
+          <div className="home-container-big-2">
+            <span className='bigPit'>{p1Name} Big Pit</span>
+            <div className="player1"><p className='count-big'>{p1BigPit}</p></div>
+          </div>
         </div>
       </div>
     </div>

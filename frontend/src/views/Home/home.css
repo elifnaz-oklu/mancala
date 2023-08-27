@@ -1,5 +1,5 @@
 
-html {background-color: yellowgreen ;
+html {background-color: lightcoral ;
 }
 .home-container {
   width: 100%;
@@ -7,10 +7,23 @@ html {background-color: yellowgreen ;
   min-height: 100%;
   align-items: flex-start;
   flex-direction: column;
-  background-color: yellowgreen ;
   position:absolute;
 }
+
+.pit-container {
+    margin-left: 10%;
+    margin-top: 15%;    
+    width: 1040px;
+    display: flex;
+    height: 300px;
+    align-items: flex-start;
+    flex-direction: column;
+    position:absolute;
+    border:10px solid black;
+  
+}
 .home-containermenu {
+  margin-top: 5%;
   flex: initial;
   width: 100%;
   height: 60px;
@@ -22,8 +35,9 @@ html {background-color: yellowgreen ;
   width: 20%;
   height: 100%;
   align-items: center;
-  background-color: yellowgreen;
+  background-color: transparent;
   margin-right: 75px;
+  border:5px solid black;
 }
 .player1 {
   flex:initial;
@@ -37,6 +51,12 @@ html {background-color: yellowgreen ;
 
 .count {
   font-weight: bold;
+  margin-top: 30px;
+}
+
+.count-big {
+  font-weight: bold;
+  margin-top: 75px;
 }
 .player2 {
   flex:initial;
@@ -52,12 +72,13 @@ html {background-color: yellowgreen ;
   display: flex;
   width: 30%;
   height: 15%;
+  font-weight: bold;
 }
 .bigPit {
   flex:initial;
   display: flex;
-  width: 100%;
   height: 15%;
+  font-weight: bold;
 }
 .alert-message {
   margin-top: 20px;
@@ -65,43 +86,66 @@ html {background-color: yellowgreen ;
   width: 40%;
   align-items: center;
 }
-.home-container-big {
+.home-container-big-1 {
   flex: initial;
-  width: 13%;
-  border: 2px solid black;
-  height: 166px;
+  width: 120px;
+  height: 240px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background:yellowgreen;
+  background:url("images/pit.jpg") lightcoral;
+  background-size:contain;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  border:2px solid black;
+}
+
+.home-container-big-2 {
+  flex: initial;
+  width: 120px;
+  height: 240px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: -120px;
+  background:url("images/pit.jpg") lightcoral;
+  background-size:contain;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  border:2px solid black;
 }
 .home-container-small {
   flex: initial;
-  width: 13%;
-  border: 2px solid black;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background:lightcoral;
+  background:url("images/pit.jpg") lightcoral;
+  background-blend-mode: multiply;
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border:2px solid black;
 }
 
 .home-container-firstrow {
-  width: 80%;
-  margin-left:10% ;
-  margin-top: 5%;
+  width: 840px;
+  margin-left: 40px;
+  margin-top: 25px;
   flex: initial;
-  height: 60px;
+  height: 120px;
   display: flex;
   align-items: flex-center;
 }
 .home-container-secondrow {
-  width: 75.5%;
-  margin-left:20%;
-  margin-top: 3%;
+  width: 840px;
   flex: initial;
-  height: 60px;
+  margin-left: 160px;
+  height: 120px;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-center;
 }
 
